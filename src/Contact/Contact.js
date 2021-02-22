@@ -1,6 +1,15 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-const Contact = () => {
+class Contact extends Component {
+  constructor() {
+    super();
+    this.state = {
+      name: '',
+      email: '',
+      content: ''
+    }
+  }
+  render() {
   return (
     <section className='contact'>
       <h2>Contact me</h2>
@@ -20,7 +29,7 @@ const Contact = () => {
         <button className='contact-btn'>Submit</button>
       </form>
     </section>
-  )
+  )}
 }
 
 export default Contact;
