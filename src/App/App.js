@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Nav from '../Nav/Nav';
 import About from '../About/About';
 import Contact from '../Contact/Contact';
 import Projects from '../Projects/Projects';
@@ -14,7 +15,7 @@ class App extends Component {
   render() {
     return (
       <div className='App'>
-        <h1 className='app-title'>Portfolio</h1>
+        <Nav />
         <About />
         <Contact />
         <Projects />
