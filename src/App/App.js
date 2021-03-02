@@ -4,6 +4,7 @@ import About from '../About/About';
 import Contact from '../Contact/Contact';
 import Projects from '../Projects/Projects';
 import Resume from '../Resume/Resume';
+import { Route } from 'react-router-dom';
 
 class App extends Component {
   constructor() {
@@ -16,7 +17,8 @@ class App extends Component {
     return (
       <div className='App'>
         <Nav />
-        <About />
+        <Route exact path='/' render={ () => <p>home</p> } />
+        <Route exact path='/about' render={() =>  <About />} />
         <Contact />
         <Projects />
         <Resume />
