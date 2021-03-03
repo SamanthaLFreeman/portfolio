@@ -18,10 +18,10 @@ class App extends Component {
       <div className='App'>
         <Nav />
         <Route exact path='/' render={ () => <p>home</p> } />
-        <Route exact path='/about' render={() =>  <About />} />
-        <Contact />
-        <Projects />
-        <Resume />
+        <Route exact path='/about' render={() => <About />} />
+        <Route exact path='/contact' render={() => <Contact />} />
+        <Route exact path='/projects' render={() => <Projects />} />
+        <Route exact path='/resume' render={() => <Resume />} />
       </div>
     )
   }
