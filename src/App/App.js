@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Nav from '../Nav/Nav';
+import Home from '../Home/Home';
 import About from '../About/About';
 import Contact from '../Contact/Contact';
 import Projects from '../Projects/Projects';
@@ -17,7 +18,7 @@ class App extends Component {
     return (
       <div className='App'>
         <Nav />
-        <Route exact path='/' render={ () => <p>home</p> } />
+        <Route exact path='/' render={() => <Home /> } />
         <Route exact path='/about' render={() => <About />} />
         <Route exact path='/contact' render={() => <Contact />} />
         <Route exact path='/projects' render={() => <Projects />} />
